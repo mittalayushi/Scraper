@@ -1,4 +1,7 @@
-from urllib2 import urlopen as uReq
+try:
+	from urllib2 import urlopen as uReq
+except:
+	from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import urllib
 my_url='https://www.scholarships.com/financial-aid/college-scholarships/scholarship-directory/academic-major'
